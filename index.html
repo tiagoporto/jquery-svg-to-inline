@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<style>
+		.pag g{
+			fill: blue;
+			stroke-width: 2px;
+			stroke: green;
+		}
+
+		.stroke g{
+			fill: transparent;
+			stroke-width: 2px;
+			stroke: green;
+		}
+	</style>
+
+	<object class="svg rammstein" type="image/svg+xml" data="https://upload.wikimedia.org/wikipedia/commons/6/66/Rammstein_logo_2.svg"></object>
+
+
+	<img src="https://upload.wikimedia.org/wikipedia/de/e/ec/Metallica_Logo.svg"  class="svg">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script src="loadSVG.js"></script>
+
+<script>
+	$( ".svg" ).svgToInline();
+</script>
+
+</body>
+</html>
