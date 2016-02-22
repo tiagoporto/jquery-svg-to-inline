@@ -5,11 +5,14 @@
 */
 
 $.fn.svgToInline = function() {
+	var usedClass = this.selector;
+
 	this.each(function() {
 		var path = $(this).attr('data') || $(this).attr('src');
 		var current = $(this);
 		var getClass = [];
 		var elementClass = '';
+
 
 
 		$($(this).attr('class').split(' ')).each(function() {
@@ -20,7 +23,6 @@ $.fn.svgToInline = function() {
 
 
 		if(getClass.length > 0){
-
 			for (var i = 0; i < getClass.length; ++i) {
 				var space = '';
 
