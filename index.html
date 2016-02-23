@@ -6,23 +6,25 @@
 </head>
 <body>
 	<style>
-		.pag g{
-			fill: blue;
-			stroke-width: 2px;
-			stroke: green;
+		.rammstein--stroke{
+			fill-opacity: 0;
+			stroke-width: 5px;
+			stroke: red;
 		}
 
-		.stroke g{
-			fill: transparent;
-			stroke-width: 2px;
-			stroke: green;
+		.metallica rect{
+			fill-opacity: 0 !important;
+		}
+
+		.metallica path, .metallica polygon{
+			fill: #000 !important;
 		}
 	</style>
 
-	<object class="svg rammstein" type="image/svg+xml" data="https://upload.wikimedia.org/wikipedia/commons/6/66/Rammstein_logo_2.svg"></object>
+	<object type="image/svg+xml" data="https://upload.wikimedia.org/wikipedia/commons/6/66/Rammstein_logo_2.svg" class="svg rammstein--stroke"></object>
 
 
-	<img src="https://upload.wikimedia.org/wikipedia/de/e/ec/Metallica_Logo.svg"  class="svg">
+	<img src="https://upload.wikimedia.org/wikipedia/de/e/ec/Metallica_Logo.svg"  class="svg metallica">
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

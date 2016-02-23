@@ -11,18 +11,17 @@ $.fn.svgToInline = function() {
 		var path = $(this).attr('data') || $(this).attr('src');
 		var current = $(this);
 		var getClass = [];
-		var elementClass = '';
-
-
+		var newElementClass = '';
 
 		$($(this).attr('class').split(' ')).each(function() {
-			if (this.toString() !== 'svg') {
+			if (this.toString() !== usedClass.replace('.', '')) {
 				getClass.push( this.toString() );
 			};
 		});
 
-
 		if(getClass.length > 0){
+			var elementClass = '';
+
 			for (var i = 0; i < getClass.length; ++i) {
 				var space = '';
 
@@ -35,8 +34,9 @@ $.fn.svgToInline = function() {
 			}
 		}
 
-		// console.log( '+' + elementClass  + '+');
-
+		if(elementClass !== ''){
+			newElementClass = `class="${elementClass}"`;
+		};
 
 		$.ajax({
 			url : path,
@@ -44,18 +44,13 @@ $.fn.svgToInline = function() {
 			success : function (data) {
 				var element = data.replace(/<[?!][\s\w\"-\/:=?]+>/g, '');
 
+				var getSvgTag = element.match(/<svg[\w\s\t\n:="\\'\/.#-]+>/g);
 
-				// var getSvgTag = element.match(/<svg[\w\s\t\n:="\\'\/.#-]+>/g);
+				var addedClass = getSvgTag[0].replace('>', `${newElementClass}>`);
 
+				var newElement = element.replace(/<svg[\w\s\t\n:="\\'\/.#-]+>/g, addedClass);
 
-				// var addedClass = getSvgTag[0].replace('>', ' class="' + getClass + '">');
-
-
-				// var newElement = element.replace(/<svg[\w\s\t\n:="\\'\/.#-]+>/g, addedClass);
-
-				// console.log(newElement);
-
-				current.replaceWith( element );
+				current.replaceWith( newElement );
 			}
 		});
 
