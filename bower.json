@@ -1,0 +1,28 @@
+{
+  "name": "jquery-svg-to-inline",
+  "homepage": "http://tiagoporto.github.io/jquery-svg-to-inline/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tiagoporto/jquery-svg-to-inline"
+  },
+  "keywords": [
+    "svg",
+    "inline",
+    "html"
+  ],
+  "author": {
+    "name": "Tiago Porto",
+    "email": "tiago@tiagoporto.com",
+    "homepage": "http://tiagoporto.com"
+  },
+  "main": "jquery-svg-to-inline.js",
+  "ignore": [
+    "**/*",
+    "!LICENSE",
+    "!README.md"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "jquery": "^2.2.1"
+  }
+}
