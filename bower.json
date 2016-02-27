@@ -8,6 +8,7 @@
   "keywords": [
     "svg",
     "inline",
+    "include",
     "html"
   ],
   "author": {
@@ -19,7 +20,8 @@
   "ignore": [
     "**/*",
     "!LICENSE",
-    "!README.md"
+    "!README.md",
+    "!jquery-svg-to-inline.js"
   ],
   "license": "MIT",
   "devDependencies": {
