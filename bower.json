@@ -23,8 +23,8 @@
     "!README.md",
     "!jquery-svg-to-inline.js"
   ],
-  "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "jquery": "^2.2.1"
-  }
+  },
+  "license": "MIT"
 }
