@@ -1,68 +1,60 @@
-/*! jQuery SVG to Inline v0.1.2beta
+/*! jQuery SVG to Inline v0.1.3
 *   https://github.com/tiagoporto/jquery-svg-to-inline
 *   Copyright (c) 2015-2016 Tiago Porto (tiagoporto.com)
 *   Released under the MIT license
 */
 
-$.fn.svgToInline = function () {
+$.fn.svgToInline = function (options) {
     'use strict';
 
-    var usedClass = this.selector;
+    var trigger = {
+        class: this.selector.replace('.', ''),
+        useClass: options && options.useTriggerClass || false
+    };
 
     this.each(function () {
         var svg = {
                 currency: $(this),
-                newClass: '',
                 oldClass: '',
+                newClass: '',
                 path: $(this).attr('data') || $(this).attr('src')
             },
-            classes = {
-                getting: [],
-                inject: $(this).attr('class').split(' ')
-            };
+            request = {
+                element: '',
+                svgTag: '',
+                svgTagWithoutClass: ''
+            },
+            inputClass = $(this).attr('class').split(' '),
+            inputClassLenght = inputClass.length;
 
-        classes.inject.forEach(function (element) {
-            element.toString() !== usedClass.replace('.', '') && classes.getting.push(element.toString());
-        });
-
-
-        if (classes.getting.length > 0) {
-            var elementClass = '';
-
-            for (var i = 0; i < classes.getting.length; ++i) {
+        if (inputClassLenght > 0) {
+            for (var i = 0; i < inputClassLenght; ++i) {
                 var space = '';
 
-                if (i !== classes.getting.length - 1) {
-                    space = ' ';
-                }
+                if (inputClass[i] === trigger.class && !trigger.useClass) { continue; }
 
-                elementClass += classes.getting[i] + space;
+                (i !== inputClass.length - 1) && (space = ' ');
+                inputClass[i] && (svg.newClass += inputClass[i] + space);
             }
-        }
-
-        if (elementClass !== '') {
-            svg.newClass = 'class="' + elementClass + '"';
         }
 
         $.ajax({
             url: svg.path,
             dataType: 'text',
-            success: function success(data) {
-                var element = data.replace(/<[?!][\s\w\"-\/:=?]+>/g, '');
+            success: function (response) {
+                request.element = response.replace(/<[?!][\s\w\"-\/:=?]+>/g, ''),
+                request.svgTag = request.element.match(/<svg[\w\s\t\n:="\\'\/.#-]+>/g);
+                request.svgTagWithoutClass = request.svgTag[0].replace(/class=\"[\w\s-_]+\"/, '');
+                svg.oldClass = request.svgTag[0].match(/class=\"(.*?)\"/);
 
-                var getSvgTag = element.match(/<svg[\w\s\t\n:="\\'\/.#-]+>/g);
+                // If exist class in svg add to svg.newClass
+                svg.oldClass && svg.oldClass[1] && svg.newClass && (svg.newClass = svg.oldClass[1] + ' ' + svg.newClass);
 
-                // var getSag = getSvgTag[0].match(/class=\"(.*?)\"/);
+                (svg.newClass !== '') && (svg.newClass = 'class="' + svg.newClass + '"');
 
-                // getSag[1] && (svg.newClass = getSag[1] + ' ' + svg.newClass);
+                request.svgTagWithoutClass = request.svgTagWithoutClass.replace('>', ' ' + svg.newClass + '>');
 
-
-                var addedClass = getSvgTag[0].replace(/class=\"[\w\s]+\"/, '');
-                addedClass = addedClass.replace('>', ' ' + svg.newClass + '>');
-
-                var newElement = element.replace(/<svg[\w\s\t\n:="\\'\/.#-]+>/g, addedClass);
-
-                svg.currency.replaceWith(newElement);
+                svg.currency.replaceWith( request.element.replace(/<svg[\w\s\t\n:="\\'\/.#-]+>/g, request.svgTagWithoutClass) );
             }
         });
     });
