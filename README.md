@@ -1,4 +1,12 @@
 # jquery-svg-to-inline
+[![Build Status](https://travis-ci.org/tiagoporto/jquery-svg-to-inline.svg)](https://travis-ci.org/tiagoporto/jquery-svg-to-inline)
+[![Coverage Status](https://img.shields.io/coveralls/tiagoporto/jquery-svg-to-inline.svg)](https://coveralls.io/github/tiagoporto/jquery-svg-to-inline)
+[![Dependencies Status](https://david-dm.org/tiagoporto/jquery-svg-to-inline.svg)](https://david-dm.org/tiagoporto/jquery-svg-to-inline)
+[![devDependencies Status](https://david-dm.org/tiagoporto/jquery-svg-to-inline/dev-status.svg)](https://david-dm.org/tiagoporto/jquery-svg-to-inline#info=devDependencies)
+[![NPM Downloads](https://img.shields.io/npm/dt/jquery-svg-to-inline.svg)](https://www.npmjs.com/package/jquery-svg-to-inline)
+[![Github Release](https://img.shields.io/github/release/tiagoporto/jquery-svg-to-inline.svg)](https://github.com/tiagoporto/jquery-svg-to-inline/releases)
+[![Github Issues](https://img.shields.io/github/issues/tiagoporto/jquery-svg-to-inline.svg)](https://github.com/tiagoporto/jquery-svg-to-inline/issues)
+[![Github License](https://img.shields.io/github/license/tiagoporto/jquery-svg-to-inline.svg)](https://raw.githubusercontent.com/tiagoporto/jquery-svg-to-inline/master/LICENSE.md)
 
 > Jquery plugin to embbed svg inline.
 
