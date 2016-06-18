@@ -17,7 +17,6 @@
     "type": "git",
     "url": "https://github.com/tiagoporto/jquery-svg-to-inline.git"
   },
-
   "main": "public/js/jquery-svg-to-inline.js",
   "license": "MIT",
   "devDependencies": {
@@ -67,5 +66,8 @@
     "run-sequence": "^1.1.5",
     "vinyl-buffer": "^1.0.0",
     "yargs": "^4.1.0"
+  },
+  "dependencies": {
+    "jquery": "^2.2.1"
   }
 }
