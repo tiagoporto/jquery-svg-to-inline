@@ -7,7 +7,7 @@
 [![Github Issues](https://img.shields.io/github/issues/tiagoporto/jquery-svg-to-inline.svg)](https://github.com/tiagoporto/jquery-svg-to-inline/issues)
 [![Github License](https://img.shields.io/github/license/tiagoporto/jquery-svg-to-inline.svg)](https://raw.githubusercontent.com/tiagoporto/jquery-svg-to-inline/master/LICENSE.md)
 
-> Jquery plugin to embbed svg inline.
+> A jQuery plugin to replace <image> and <objet> embedding SVG inline.
 
 
 ## Table of Contents
