@@ -13,8 +13,8 @@ module.exports = function(config) {
 
         // list of files / patterns to load in the browser
         files: [
-            'src/scripts/*.js',
-            'spec/my-test.js'
+            'dist/js/jquery-svg-to-inline.js',
+            'spec/jquery-svg-to-inline-spec.js'
         ],
 
 
@@ -26,7 +26,7 @@ module.exports = function(config) {
         // preprocess matching files before serving them to the browser
         // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
         preprocessors: {
-            'scripts/*.js' : ['coverage']
+            'dist/js/jquery-svg-to-inline.js' : ['coverage']
         },
 
         // configure the reporter
