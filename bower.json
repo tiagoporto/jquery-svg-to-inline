@@ -15,13 +15,14 @@
     "include",
     "html"
   ],
-  "main": "public/js/jquery-svg-to-inline.js",
+  "main": "dist/js/jquery-svg-to-inline.js",
   "license": "MIT",
   "ignore": [
     "**/*",
     "!LICENSE",
+    "!CHANGELOG.md",
     "!README.md",
-    "!jquery-svg-to-inline.js"
+    "!dist/**/*"
   ],
   "dependencies": {
     "jquery": "^2.2.1"

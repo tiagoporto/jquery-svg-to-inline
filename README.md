@@ -1,4 +1,4 @@
-# jquery-svg-to-inline
+# jQuery SVG to inline
 [![Build Status](https://travis-ci.org/tiagoporto/jquery-svg-to-inline.svg)](https://travis-ci.org/tiagoporto/jquery-svg-to-inline)
 [![Coverage Status](https://img.shields.io/coveralls/tiagoporto/jquery-svg-to-inline.svg)](https://coveralls.io/github/tiagoporto/jquery-svg-to-inline)
 [![Dependencies Status](https://david-dm.org/tiagoporto/jquery-svg-to-inline.svg)](https://david-dm.org/tiagoporto/jquery-svg-to-inline)
