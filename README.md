@@ -71,4 +71,4 @@ Will generate
 
 ## License
 
-Jquery SVG to inline is released under the terms of the [MIT license](http://opensource.org/licenses/MIT).
+Jquery SVG to inline is released under the terms of the [MIT license](https://github.com/tiagoporto/jquery-svg-to-inline/blob/master/LICENSE).

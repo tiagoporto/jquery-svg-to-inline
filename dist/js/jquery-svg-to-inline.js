@@ -1,4 +1,4 @@
-/*! jQuery SVG to Inline v0.1.3
+/*! jQuery SVG to Inline v0.1.4
 *   https://github.com/tiagoporto/jquery-svg-to-inline
 *   Copyright (c) 2016 Tiago Porto (tiagoporto.com)
 *   Released under the MIT license
