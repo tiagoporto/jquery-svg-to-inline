@@ -13,7 +13,7 @@ module.exports = function(config) {
 
         // list of files / patterns to load in the browser
         files: [
-            'https://code.jquery.com/jquery-3.1.1.min.js'
+            'https://code.jquery.com/jquery-3.1.1.min.js',
             'dist/js/jquery-svg-to-inline.js',
             'spec/jquery-svg-to-inline-spec.js'
         ],
