@@ -5,7 +5,7 @@ describe('Replace SVG', function() {
         // loadFixtures('example.html');
         fixture = setFixtures('<img src="https://upload.wikimedia.org/wikipedia/de/e/ec/Metallica_Logo.svg"  class="svg metallica">');
 
-        $_elementClass = '.svg',
+        $_elementClass = '.svg';
     });
 
 	it('Replace img tag', function() {
