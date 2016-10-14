@@ -7,7 +7,7 @@
 [![Github Issues](https://img.shields.io/github/issues/tiagoporto/jquery-svg-to-inline.svg)](https://github.com/tiagoporto/jquery-svg-to-inline/issues)
 [![Github License](https://img.shields.io/github/license/tiagoporto/jquery-svg-to-inline.svg)](https://raw.githubusercontent.com/tiagoporto/jquery-svg-to-inline/master/LICENSE.md)
 
-> A jQuery plugin to replace <image> and <objet> embedding SVG inline.
+> A jQuery plugin to replace <image> and <objet> embed SVG inline.
 
 
 ## Table of Contents
@@ -15,7 +15,7 @@
 * [Examples](#examples)
 * [Usage](#usage)
 * [Options](#options)
-    * [useTriggerClass](#usetriggerclass)
+* [useTriggerClass](#usetriggerclass)
 * [License](#license)
 
 
@@ -29,7 +29,7 @@ or
 <img src="https://somesvg.svg"  class="svg myClass otherClass">
 ```
 
-Will generate
+This will generate
 
 ```html
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="myClass otherClass">
@@ -48,7 +48,7 @@ $( ".svg" ).svgToInline();
 
 #### useTriggerClass
 
-By default the trigger class will isn't used on inline svg. If you want use set to `true`.
+By default the trigger class isn't used for inline svg. If you want to use then set it to `true`.
 
 ```js
 $( ".svg" ).svgToInline({useTriggerClass: true});
@@ -60,7 +60,7 @@ $( ".svg" ).svgToInline({useTriggerClass: true});
 <img src="https://somesvg.svg"  class="svg myClass otherClass">
 ```
 
-Will generate
+This will generate
 
 ```html
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="svg myClass otherClass">
