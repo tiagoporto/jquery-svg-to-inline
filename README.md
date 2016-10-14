@@ -7,7 +7,7 @@
 [![Github Issues](https://img.shields.io/github/issues/tiagoporto/jquery-svg-to-inline.svg)](https://github.com/tiagoporto/jquery-svg-to-inline/issues)
 [![Github License](https://img.shields.io/github/license/tiagoporto/jquery-svg-to-inline.svg)](https://raw.githubusercontent.com/tiagoporto/jquery-svg-to-inline/master/LICENSE.md)
 
-> A jQuery plugin to replace <image> and <objet> embedding SVG inline.
+> A jQuery plugin to replace <image> and <object> embedding SVG inline.
 
 
 ## Table of Contents
@@ -48,7 +48,7 @@ $( ".svg" ).svgToInline();
 
 #### useTriggerClass
 
-By default the trigger class will isn't used on inline svg. If you want use set to `true`.
+By default the trigger class will not be used on inline svg. If you want to use it, set the `useTriggerClass` field to `true`.
 
 ```js
 $( ".svg" ).svgToInline({useTriggerClass: true});
