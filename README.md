@@ -15,7 +15,7 @@
 * [Examples](#examples)
 * [Usage](#usage)
 * [Options](#options)
-* [useTriggerClass](#usetriggerclass)
+    * [useTriggerClass](#usetriggerclass)
 * [License](#license)
 
 
