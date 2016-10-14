@@ -48,7 +48,7 @@ $( ".svg" ).svgToInline();
 
 #### useTriggerClass
 
-By default the trigger class will isn't used on inline svg. If you want use set to `true`.
+By default the trigger class will not be used on inline svg. If you want to use it set `useTriggerClass` to `true`.
 
 ```js
 $( ".svg" ).svgToInline({useTriggerClass: true});
@@ -71,4 +71,4 @@ Will generate
 
 ## License
 
-Jquery SVG to inline is released under the terms of the [MIT license](https://github.com/tiagoporto/jquery-svg-to-inline/blob/master/LICENSE).
+jQuery SVG to inline is released under the terms of the [MIT license](https://github.com/tiagoporto/jquery-svg-to-inline/blob/master/LICENSE).
