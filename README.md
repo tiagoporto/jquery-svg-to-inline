@@ -9,7 +9,6 @@
 
 > A jQuery plugin to replace <image> and <object> embed SVG inline.
 
-
 ## Table of Contents
 
 * [Examples](#examples)
@@ -29,7 +28,7 @@ or
 <img src="https://somesvg.svg"  class="svg my-class other-class">
 ```
 
-Will generate
+This will generate
 
 ```html
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="my-class other-class">
@@ -60,7 +59,7 @@ $( ".svg" ).svgToInline({useTriggerClass: true});
 <img src="https://somesvg.svg"  class="svg my-class other-class">
 ```
 
-Will generate
+This will generate
 
 ```html
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="svg my-class other-class">
