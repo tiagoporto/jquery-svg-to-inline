@@ -21,17 +21,17 @@
 ## Examples
 
 ```html
-<object class="svg my-class" type="image/svg+xml" data="htts://somesvg.svg"></object>
+<object class="svg other-class" type="image/svg+xml" data="htts://somesvg.svg"></object>
 ```
 or
 ```html
-<img src="https://somesvg.svg"  class="svg my-class other-class">
+<img src="https://somesvg.svg"  class="svg other-class">
 ```
 
 This will generate
 
 ```html
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="my-class other-class">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="other-class">
   <circle cx="50" cy="50" r="50"/>
 </svg>
 ```
@@ -56,13 +56,13 @@ $( ".svg" ).svgToInline({useTriggerClass: true});
 ##### Example
 
 ```html
-<img src="https://somesvg.svg"  class="svg my-class other-class">
+<img src="https://somesvg.svg"  class="svg my-class">
 ```
 
 This will generate
 
 ```html
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="svg my-class other-class">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="svg my-class">
   <circle cx="50" cy="50" r="50"/>
 </svg>
 ```
