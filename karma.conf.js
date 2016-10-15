@@ -13,15 +13,14 @@ module.exports = function(config) {
 
         // list of files / patterns to load in the browser
         files: [
-            'https://code.jquery.com/jquery-3.1.1.min.js',
+            'https://code.jquery.com/jquery-2.2.1.min.js',
             'dist/js/jquery-svg-to-inline.js',
             'spec/jquery-svg-to-inline-spec.js'
         ],
 
 
         // list of files to exclude
-        exclude: [
-        ],
+        exclude: [],
 
 
         // preprocess matching files before serving them to the browser
@@ -62,14 +61,14 @@ module.exports = function(config) {
 
         // start these browsers
         // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-        browsers: ['Chrome'],
+        browsers: ['PhantomJS'],
 
-        customLaunchers: {
-            Chrome_travis_ci: {
-                base: 'Chrome',
-                flags: ['--no-sandbox']
-            }
-        },
+        // customLaunchers: {
+        //     Chrome_travis_ci: {
+        //         base: 'PhantomJS',
+        //         flags: ['--no-sandbox']
+        //     }
+        // },
 
 
         // Continuous Integration mode
@@ -79,7 +78,7 @@ module.exports = function(config) {
     };
 
     if(process.env.TRAVIS){
-        configuration.browsers = ['Chrome_travis_ci'],
+        // configuration.browsers = ['Chrome_travis_ci'],
         configuration.coverageReporter = {
             type : 'lcov',
             dir : 'coverage/'
