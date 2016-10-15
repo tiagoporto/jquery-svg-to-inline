@@ -1,7 +1,7 @@
 {
   "name": "jquery-svg-to-inline",
   "version": "0.1.4",
-  "description": "A jQuery plugin to replace <image> and <objet> embedding SVG inline.",
+  "description": "A jQuery plugin to replace <image> and <object> embed SVG inline.",
   "homepage": "https://github.com/tiagoporto/jquery-svg-to-inline",
   "author": {
     "name": "Tiago Porto",
