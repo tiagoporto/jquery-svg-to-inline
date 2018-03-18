@@ -1,12 +1,16 @@
-# jQuery SVG to inline
-[![Build Status](https://travis-ci.org/tiagoporto/jquery-svg-to-inline.svg)](https://travis-ci.org/tiagoporto/jquery-svg-to-inline)
-[![Coverage Status](https://img.shields.io/coveralls/tiagoporto/jquery-svg-to-inline.svg)](https://coveralls.io/github/tiagoporto/jquery-svg-to-inline)
-[![Dependencies Status](https://david-dm.org/tiagoporto/jquery-svg-to-inline.svg)](https://david-dm.org/tiagoporto/jquery-svg-to-inline)
-[![devDependencies Status](https://david-dm.org/tiagoporto/jquery-svg-to-inline/dev-status.svg)](https://david-dm.org/tiagoporto/jquery-svg-to-inline?type=dev)
-[![NPM Downloads](https://img.shields.io/npm/dt/jquery-svg-to-inline.svg)](https://www.npmjs.com/package/jquery-svg-to-inline)
-[![Github Release](https://img.shields.io/github/release/tiagoporto/jquery-svg-to-inline.svg)](https://github.com/tiagoporto/jquery-svg-to-inline/releases)
-[![Github Issues](https://img.shields.io/github/issues/tiagoporto/jquery-svg-to-inline.svg)](https://github.com/tiagoporto/jquery-svg-to-inline/issues)
-[![Github License](https://img.shields.io/github/license/tiagoporto/jquery-svg-to-inline.svg)](https://raw.githubusercontent.com/tiagoporto/jquery-svg-to-inline/master/LICENSE.md)
+# jQuery SVG to inline ![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)
+
+<p align="right">
+  <code>LIKED ? Leave a <a href="https://github.com/tiagoporto/jquery-svg-to-inline">⭐</a> : 😞</code>
+</p>
+
+[![Release](https://img.shields.io/npm/v/jquery-svg-to-inline.svg?style=flat-square&label=release)](https://github.com/tiagoporto/jquery-svg-to-inline/releases)
+[![Downloads](https://img.shields.io/npm/dt/jquery-svg-to-inline.svg?style=flat-square)](https://www.npmjs.com/package/jquery-svg-to-inline)
+[![License](https://img.shields.io/github/license/tiagoporto/jquery-svg-to-inline.svg?style=flat-square)](https://raw.githubusercontent.com/tiagoporto/jquery-svg-to-inline/master/LICENSE)
+[![Build Status](https://img.shields.io/travis/tiagoporto/jquery-svg-to-inline.svg?style=flat-square&logo=travis)](https://travis-ci.org/tiagoporto/jquery-svg-to-inline)
+[![Coverage Status](https://img.shields.io/coveralls/tiagoporto/jquery-svg-to-inline.svg?style=flat-square)](https://coveralls.io/github/tiagoporto/jquery-svg-to-inline)
+[![Dependencies Status](https://img.shields.io/david/tiagoporto/jquery-svg-to-inline.svg?style=flat-square)](https://david-dm.org/tiagoporto/jquery-svg-to-inline)
+[![devDependencies Status](https://img.shields.io/david/dev/tiagoporto/jquery-svg-to-inline.svg?style=flat-square)](https://david-dm.org/tiagoporto/jquery-svg-to-inline?type=dev)
 
 > A jQuery plugin to replace &lt;image&gt; and &lt;object&gt; embed SVG inline.
 
@@ -24,12 +28,12 @@
 ```html
 <object class="svg other-class" type="image/svg+xml" data="htts://somesvg.svg"></object>
 ```
-or
+
 ```html
 <img src="https://somesvg.svg"  class="svg other-class">
 ```
 
-This will generate
+Will generate
 
 ```html
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="other-class">
@@ -41,7 +45,7 @@ This will generate
 ## Usage
 
 ```js
-$( ".svg" ).svgToInline();
+$('.svg').svgToInline()
 ```
 
 ### Options
@@ -51,7 +55,7 @@ $( ".svg" ).svgToInline();
 By default the trigger class isn't used on inline svg. If you want to use it, set it to `true`.
 
 ```js
-$( ".svg" ).svgToInline({useTriggerClass: true});
+$('.svg').svgToInline({useTriggerClass: true})
 ```
 
 ##### Example
@@ -60,7 +64,7 @@ $( ".svg" ).svgToInline({useTriggerClass: true});
 <img src="https://somesvg.svg"  class="svg my-class">
 ```
 
-This will generate
+Will generate
 
 ```html
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="svg my-class">
