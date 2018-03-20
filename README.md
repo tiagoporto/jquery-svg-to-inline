@@ -48,7 +48,7 @@ Will be replaced by the linked SVG
 ## Getting Started
 
 ```
-npm i jquery-svg-to-inline
+npm install jquery-svg-to-inline
 ```
 
 ## Usage
