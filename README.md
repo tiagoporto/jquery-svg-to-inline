@@ -27,19 +27,21 @@
 ## Examples
 
 ```html
-<object class="svg object-class" type="image/svg+xml" data="htts://somesvg.svg"></object>
+<object class="svg" type="image/svg+xml" data="htts://somesvg.svg"></object>
 
-<img src="https://somesvg.svg"  class="svg img-class">
+<img src="https://somesvg.svg"  class="svg">
 ```
 
 Will be replaced by the linked SVG
 
 ```html
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="object-class">
+<!-- Replaces <object> -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <circle cx="50" cy="50" r="50"/>
 </svg>
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="img-class">
+<!-- Replaces <img> -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <rect x="50" y="20" width="150" height="150" />
 </svg>
 ```
