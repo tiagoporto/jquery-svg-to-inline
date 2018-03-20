@@ -72,7 +72,7 @@ $('.svg').svgToInline({useTriggerClass: true})
 ##### Example
 
 ```html
-<img src="https://somesvg.svg"  class="svg">
+<img src="https://somesvg.svg" class="svg">
 ```
 
 Will generate
