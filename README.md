@@ -27,9 +27,9 @@
 ## Examples
 
 ```html
-<object class="svg" type="image/svg+xml" data="htts://somesvg.svg"></object>
+<object type="image/svg+xml" data="htts://somesvg.svg" class="svg"></object>
 
-<img src="https://somesvg.svg"  class="svg">
+<img src="https://somesvg.svg" class="svg">
 ```
 
 Will be replaced by the linked SVG
