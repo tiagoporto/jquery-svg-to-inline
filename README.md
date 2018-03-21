@@ -1,7 +1,7 @@
 # jQuery SVG to inline ![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)
 
 <p align="right">
-  <code>LIKED ? Leave a <a href="https://github.com/tiagoporto/jquery-svg-to-inline">⭐</a> : 😞</code>
+  <code>LIKED ? Leave a <a href="https://github.com/tiagoporto/jquery-svg-to-inline">⭐</a> : <a href="https://github.com/tiagoporto/jquery-svg-to-inline/issues">😞</a></code>
 </p>
 
 [![Release](https://img.shields.io/npm/v/jquery-svg-to-inline.svg?style=flat-square&label=release)](https://github.com/tiagoporto/jquery-svg-to-inline/releases)
