@@ -7,7 +7,7 @@
 [![Release](https://img.shields.io/npm/v/jquery-svg-to-inline.svg?style=flat-square&label=release)](https://github.com/tiagoporto/jquery-svg-to-inline/releases)
 [![Downloads](https://img.shields.io/npm/dt/jquery-svg-to-inline.svg?style=flat-square)](https://www.npmjs.com/package/jquery-svg-to-inline)
 [![License](https://img.shields.io/github/license/tiagoporto/jquery-svg-to-inline.svg?style=flat-square)](https://raw.githubusercontent.com/tiagoporto/jquery-svg-to-inline/master/LICENSE)
-[![Build Status](https://img.shields.io/travis/tiagoporto/jquery-svg-to-inline.svg?style=flat-square&logo=travis)](https://travis-ci.org/tiagoporto/jquery-svg-to-inline)
+[![Build Status](https://img.shields.io/travis/tiagoporto/jquery-svg-to-inline.svg?style=flat-square&logo=travis&label=test)](https://travis-ci.org/tiagoporto/jquery-svg-to-inline)
 [![Coverage Status](https://img.shields.io/coveralls/tiagoporto/jquery-svg-to-inline.svg?style=flat-square)](https://coveralls.io/github/tiagoporto/jquery-svg-to-inline)
 [![Dependencies Status](https://img.shields.io/david/tiagoporto/jquery-svg-to-inline.svg?style=flat-square)](https://david-dm.org/tiagoporto/jquery-svg-to-inline)
 [![devDependencies Status](https://img.shields.io/david/dev/tiagoporto/jquery-svg-to-inline.svg?style=flat-square)](https://david-dm.org/tiagoporto/jquery-svg-to-inline?type=dev)
