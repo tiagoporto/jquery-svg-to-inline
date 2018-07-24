@@ -38,7 +38,7 @@ $.fn.svgToInline = function (options) {
             dataType: 'text',
             success: function (response) {
                 request.element = response.replace(/<[?!][\s\w\"-\/:=?]+>/g, ''),
-                request.svgTag = request.element.match(/<svg[\w\s\t\n:="\\'\/.#-]+>/g);
+                request.svgTag = request.element.match(/<svg[^>]*>/g);
                 request.svgTagWithoutClass = request.svgTag[0].replace(/class=\"[\w\s-_]+\"/, '');
                 svg.oldClass = request.svgTag[0].match(/class=\"(.*?)\"/);
 
@@ -49,7 +49,7 @@ $.fn.svgToInline = function (options) {
 
                 request.svgTagWithoutClass = request.svgTagWithoutClass.replace('>', ' ' + svg.newClass + '>');
 
-                svg.currency.replaceWith( request.element.replace(/<svg[\w\s\t\n:="\\'\/.#-]+>/g, request.svgTagWithoutClass) );
+                svg.currency.replaceWith(request.element.replace(/<svg[^>]*>/g, request.svgTagWithoutClass));
             }
         });
     });
