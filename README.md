@@ -1,3 +1,5 @@
+> This package has been deprecated. Use svg-to-inline instead, see [github.com/tiagoporto/svg-to-inline](https://github.com/tiagoporto/svg-to-inline).
+
 # jQuery SVG to inline ![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)
 
 <p align="right">
